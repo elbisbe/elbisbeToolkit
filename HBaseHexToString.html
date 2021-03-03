@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
 
-  <title>WEPGIntervalParser</title>
-  <meta name="description" content="WEPGIntervalParser">
+  <title>HBaseHexToString</title>
+  <meta name="description" content="HBaseHexToString">
   <meta name="author" content="@elbisbe">
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -17,18 +17,18 @@
 <div class="header">
   <h1>elbisbeToolkit</h1>
   <div class="dropdown">
-    <p class="dropbtn">WEPGIntervalParser</p>
+    <p class="dropbtn">HBaseHexToString</p>
     <div class="dropdown-content">
-      <a href="/HBaseHexToString.html">HBaseHexToString </a>
+      <a href="/intervalParser.html">WEPGIntervalParser</a>
     </div>
   </div>
 </div>
 
 <div class="canvas">
   <div class="textarea_wrapper">
-    <textarea id="input_text" type="text" placeholder="1613957400000_1613957580000;1614024360000_1614026640000...">1613957400000_1613957580000;1614024360000_1614026640000</textarea>
+    <textarea id="input_text" type="text" placeholder="\x00\x00\x01t\xD1\x93\x1Fp">\x00\x00\x01t\xD1\x93\x1Fp</textarea>
   </div>
-  <button class="boton" onclick="intervalParser()"> Le bouton </button>
+  <button class="boton" onclick="HBaseHexToString()"> Le bouton </button>
   <div id="resultado">El resultado saldrá aquí...</div>
 </div>    
 <script src="js/scripts.js"></script>
