@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8">
 
-  <title>HBaseHexToString</title>
-  <meta name="description" content="HBaseHexToString">
+  <title>WEPGIntervalParser</title>
+  <meta name="description" content="WEPGIntervalParser">
   <meta name="author" content="@elbisbe">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="../css/styles.css?v=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 </head>
@@ -17,20 +17,20 @@
 <div class="header">
   <h1>elbisbeToolkit</h1>
   <div class="dropdown">
-    <p class="dropbtn">HBaseHexToString</p>
+    <p class="dropbtn"><u>WEPGIntervalParser</u></p>
     <div class="dropdown-content">
-      <a href="/intervalParser.html">WEPGIntervalParser</a>
+      <a href="../index.html">Index</a>
     </div>
   </div>
 </div>
 
 <div class="canvas">
   <div class="textarea_wrapper">
-    <textarea id="input_text" type="text" placeholder="\x00\x00\x01t\xD1\x93\x1Fp">\x00\x00\x01t\xD1\x93\x1Fp</textarea>
+    <textarea id="input_text" type="text" placeholder="1613957400000_1613957580000;1614024360000_1614026640000...">1613957400000_1613957580000;1614024360000_1614026640000</textarea>
   </div>
-  <button class="boton" onclick="HBaseHexToString()"> Le bouton </button>
+  <button class="boton" onclick="intervalParser()"> Le bouton </button>
   <div id="resultado">El resultado saldrá aquí...</div>
 </div>    
-<script src="js/scripts.js"></script>
+<script src="../js/intervalParser.js"></script>
 </body>
 </html>
