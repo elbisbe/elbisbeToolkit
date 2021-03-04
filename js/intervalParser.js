@@ -4,11 +4,15 @@ function unixToString(unix_timestamp){
     return formattedTime;
 }
 
+function test(a,b){
+    return a[0]-b[0];
+}
+
 
 function intervalParser() {
     var t = document.getElementById("input_text").value.replace(/[\s\n\r]+/g,'').trim();
     var t2 = t.split(";").map(x => x.split("_"));
-    var t3 = t2.sort(function(a,b) {a[0]-b[0]});
+    var t3 = t2.sort(test);
     var t4 = t3.map(x => x.map(unixToString).join("----"));
     var t5 = t4.join("<br />")
     document.getElementById("resultado").innerHTML = t5;

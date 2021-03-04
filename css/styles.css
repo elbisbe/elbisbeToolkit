@@ -68,8 +68,27 @@
   text-align: center;
 }
 
+.textarea_wrapper{
+  margin-right:5px;
+}
+
 textarea {
   width: 100%;
   height: 300px;
-  margin: 0vh 0px 1vh 0px;
+  margin: 0vh 5vw 1vh 0px;
+}
+
+/*
+th, td, p, input, h3 {
+  font:15px 'Segoe UI';
+}
+*/
+table, th, td {
+  border: solid 1px #ddd;
+  border-collapse: collapse;
+  padding: 2px 3px;
+  text-align: center;
+}
+th {
+  font-weight:bold;
 }
