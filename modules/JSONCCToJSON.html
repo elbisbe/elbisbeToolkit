@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JSONCCToJSON</title>
+  <meta name="description" content="JSONCCToJSON">
+  <meta name="author" content="@elbisbe">
+  <link rel="stylesheet" href="../css/styles.css?v=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="header">
+  <h1>elbisbeToolkit</h1>
+  <div class="dropdown">
+    <p class="dropbtn"><u>JSONCCToJSON</u></p>
+    <div class="dropdown-content">
+      <a href="../index.html">Index</a>
+    </div>
+  </div>
+</div>
+
+<div class="canvas">
+  <div class="textarea_wrapper">
+    <textarea id="input_text" type="text" placeholder='{"nu_administra":"46610003039356","co_dispositivo_mt":"10.147.139.6_F82DC0A068A5","it_kafka":{"long":1614927998383},"it_inicio_canal_real":{"long":1614915074113},"it_fin_canal_real":null,"it_inicio_canal_est":{"long":1614915074113},"it_fin_canal_estimada":{"long":1614916548481},"co_canal_mt":{"string":"663"},"co_cadena_tv_ds":{"string":"DIVINI"},"fx_medida_audi":{"string":"2021-03-05"},"in_cambio_valido":{"string":"S"},"in_aplica_abusivo":{"string":"S"},"in_desconexion_real":{"string":"N"},"in_desp_intervalo":{"string":"N"},"in_servicio_tv":{"string":"TVADSLIPBAS"},"co_cadena_tv_dharma_ds":null,"co_elemento_vod_ds":null,"ds_evento":null,"it_inicio_titulo":null,"it_fin_titulo":null,"fx_inicio_titulo":null,"ho_inicio_titulo":null,"fx_fin_titulo":null,"ho_fin_titulo":null,"pt_programa":null,"co_serie":null,"no_serie":null,"co_temporada":null,"ds_temporada":null,"nu_temporada":null,"nu_episodio":null,"co_moral_nube_ds":null,"ds_moral_nube_ds":null,"ds_genero_ds":null,"ds_subgenero_ds":null,"ds_cadena_tv_ds":null,"ds_cadena_tv_dharma_ds":null,"ds_genero_canal_ds":null,"ds_subgenero_canal_ds":null,"co_distribuidora_ds":null,"ds_distribuidora_ds":null,"no_canal_propietario":null,"in_tipo_canal":null,"in_tipo_dia_iniprog":null,"in_festivo_iniprog":null,"in_programa_completo":null,"co_tipo_video_ds":null,"pt_evento_real":null,"pt_contenido_real":null,"it_inicio_evento":null,"it_fin_evento":null,"it_inicio_visionado":{"long":1614915074113},"it_fin_visionado":{"long":1614916548481},"in_programa_valido":null,"co_tipo_video_ds_cal":null,"ds_lenguaje":{"string":"ESP"},"ds_subtitulo":{"string":"NONE"},"coef_audi":{"double":1.0},"in_festivo":{"string":"N"},"in_tipo_dia":{"string":"V"},"in_dia_semana":{"string":"L"},"nu_perfil_usuario":0}'></textarea>
+  </div>
+  <button class="boton" onclick="JSONCCToJSON()"> Le bouton </button>
+  <div id="resultado">El resultado saldrá aquí...</div>
+</div>    
+<script src="../js/JSONCCToJSON.js"></script>
+</body>
+</html>

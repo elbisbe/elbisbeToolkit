@@ -66,6 +66,7 @@
 #resultado {
   font-size: min(20px,3vw);
   text-align: center;
+  word-wrap: break-word;
 }
 
 .textarea_wrapper{

@@ -8,12 +8,13 @@ function test(a,b){
     return a[0]-b[0];
 }
 
-
+    
 function intervalParser() {
     var t = document.getElementById("input_text").value.replace(/[\s\n\r]+/g,'').trim();
+    console.log(t);
     var t2 = t.split(";").map(x => x.split("_"));
     var t3 = t2.sort(test);
-    var t4 = t3.map(x => x.map(unixToString).join("----"));
+    var t4 = t3.map(x => x.join(" --- ") + " --> " + x.map(unixToString).join(" --- "));
     var t5 = t4.join("<br />")
     document.getElementById("resultado").innerHTML = t5;
 }
