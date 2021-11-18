@@ -1,0 +1,42 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>csvToTable</title>
+  <meta name="description" content="csvToTable">
+  <meta name="author" content="@elbisbe">
+  <link rel="stylesheet" href="../css/styles.css?v=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="header">
+  <h1>elbisbeToolkit</h1>
+  <div class="dropdown">
+    <p class="dropbtn"><u>csvToTable</u></p>
+    <div class="dropdown-content">
+      <a href="../index.html">Index</a>
+    </div>
+  </div>
+</div>
+
+<div class="canvas">
+  <div class="textarea_wrapper">
+    <textarea id="input_text" type="text" placeholder='dwngnntk.nu_docu,dwngnntk.co_tipo_documento,dwngnntk.buin_id_customer_order,dwngnntk.nu_novum_id,dwngnntk.in_pedido_nuevo,dwngnntk.in_pedido_cambio_estado,dwngnntk.it_kafka,dwngnntk.field_partition,dwngnntk.field_offset,dwngnntk.year,dwngnntk.month,dwngnntk.day
+0000000046619601G,D,20547045528130250836497150623287543547,5006752072,1,0,1637190052323,0,547455,2021,11,18
+0000000015127597Z,D,94105311903036320610083743819135360580,5008482891,1,0,1637190054089,0,547456,2021,11,18
+0000000053415790S,D,25140584305585113717590836919059988458,5007227649,1,0,1637190054123,0,547457,2021,11,18'>dwngnntk.nu_docu,dwngnntk.co_tipo_documento,dwngnntk.buin_id_customer_order,dwngnntk.nu_novum_id,dwngnntk.in_pedido_nuevo,dwngnntk.in_pedido_cambio_estado,dwngnntk.it_kafka,dwngnntk.field_partition,dwngnntk.field_offset,dwngnntk.year,dwngnntk.month,dwngnntk.day
+0000000046619601G,D,20547045528130250836497150623287543547,5006752072,1,0,1637190052323,0,547455,2021,11,18
+0000000015127597Z,D,94105311903036320610083743819135360580,5008482891,1,0,1637190054089,0,547456,2021,11,18
+0000000053415790S,D,25140584305585113717590836919059988458,5007227649,1,0,1637190054123,0,547457,2021,11,18</textarea>
+  </div>
+  <button class="boton" onclick="csvToTable()"> Le bouton </button>
+  <div id="resultado">El resultado saldrá aquí...</div>
+</div>    
+<script src="../js/csvToTable.js"></script>
+</body>
+</html>

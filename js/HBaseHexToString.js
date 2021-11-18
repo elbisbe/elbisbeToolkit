@@ -23,8 +23,6 @@ function expandHBaseHex(input){
     else return [parseInt("0x"+input)]
 
 }
-
-
 function HBaseHexToString(){
 
     var t = document.getElementById("input_text").value.replace(/\\x/, "").split("\\x");

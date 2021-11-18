@@ -64,7 +64,7 @@
 }
 
 #resultado {
-  font-size: min(20px,3vw);
+  font-size: min(10px,3vw);
   text-align: center;
   word-wrap: break-word;
 }
@@ -89,6 +89,8 @@ table, th, td {
   border-collapse: collapse;
   padding: 2px 3px;
   text-align: center;
+  table-layout: fixed;
+  width:100%;
 }
 th {
   font-weight:bold;
