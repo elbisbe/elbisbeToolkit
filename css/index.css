@@ -9,12 +9,31 @@
 }
 */
 
+h1 {
+	margin-block-end: 0em;
+}
+
+p {
+	margin-block-start: 0em;
+}
+
 .header {
   padding: 1vh 3vh 1vh 3vh;
   text-align: center;
   background: #581abc;
   color: white;
   font-size: min(20px,3vw);
+  font-family: 'Work Sans', sans-serif;
+  /*min-width: 150px;*/
+}
+
+
+.subheader {
+  padding: 0.1vh 0.5vh 0.1vh 0.5vh;
+  text-align: center;
+  background: #581abc;
+  color: white;
+  font-size: min(14px,2vw);
   font-family: 'Work Sans', sans-serif;
   /*min-width: 150px;*/
 }
@@ -50,7 +69,7 @@
 .dropdown-content a {
   float: none;
   color: white;
-  padding: 12px 16px;
+  padding: 4px 16px;
   text-decoration: none;
   display: block;
 }

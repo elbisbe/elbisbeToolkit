@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>unixConverter</title>
+  <meta name="description" content="unixConverter">
+  <meta name="author" content="@elbisbe">
+  <link rel="stylesheet" href="../css/styles.css?v=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="header">
+  <h1>elbisbeToolkit</h1>
+  <p class= "subheader" > <em> make dumb stuff faster </em> </p>
+  <div class="dropdown">
+    <p class="dropbtn"><u>unixConverter</u></p>
+    <div class="dropdown-content">
+      <a href="../index.html">Index</a>
+    </div>
+  </div>
+</div>
+
+<div class="flex-container">
+	<b>Tiempo Unix: segundos desde 1970-1-1 00:00:00 UTC+0</b>
+	<!--<br><br> -->
+	<div class="unix_text unix_class_now">
+		El tiempo Unix actual (es-ES) es: <span id="unix_now"></span>
+	</div>
+		<div class="unix_text unix_class_week">
+		La semana del año (ISO Week) es: <span id="unix_week"></span>
+	</div>
+	<div class ="unix_text date_to_unix_class">
+		<label> Elige fecha (es-ES) para convertir a Unix: </label>
+		<input type="datetime-local" id="datetime_user" step="0.1">
+		<button class="boton1" onclick="dateToUnix()"> Pulsa aquí para convertir a Unix </button>
+		<div class="answer_text" id="resultado1"></div>
+	</div>
+	<div class ="unix_text unix_to_date_class">
+		<label> Introduce Unix para convertir a fecha (es-ES): </label>
+		<input type="text" id="unix_user">
+		<button class="boton2" onclick="unixToString()"> Pulsa aquí para convertir a fecha </button>
+		<div class="answer_text" id="resultado2"></div>
+	</div>
+	<div class ="unix_text unix_to_startofdayunix_class">
+		<label> Introduce Unix para obtener el comienzo del día en Unix (es-ES): </label>
+		<input type="text" id="unix_user2">
+		<button class="boton3" onclick="unixToStartOfDayUnix()"> Pulsa aquí para convertir a fecha </button>
+		<div class="answer_text" id="resultado3"></div>
+	</div> 
+<!--
+<div class="canvas">
+  <div class="textarea_wrapper">
+    <textarea id="input_text" type="text" placeholder="1614843995279"></textarea>
+  </div>
+  <button class="boton" onclick="unixToString()"> Le bouton </button>
+  <div id="resultado">El resultado saldrá aquí...</div>
+</div>   
+--> 
+<script src="../js/unixConverter.js"></script>
+</body>
+</html>

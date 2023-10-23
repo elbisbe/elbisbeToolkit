@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>stringUtils</title>
+  <meta name="description" content="stringUtils">
+  <meta name="author" content="@elbisbe">
+  <link rel="stylesheet" href="../css/styles.css?v=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="header">
+  <h1>elbisbeToolkit</h1>
+   <p class= "subheader" > <em> make dumb stuff faster </em> </p>
+  <div class="dropdown">
+    <p class="dropbtn"><u>stringUtils</u></p>
+    <div class="dropdown-content">
+      <a href="../index.html">Index</a>
+    </div>
+  </div>
+</div>
+
+<div class="canvas">
+  <div class="textarea_wrapper">
+    <textarea id="input_text" type="text" placeholder="1614843995279"></textarea>
+  </div>
+  <label for="beautify_mode">Elige un modo:</label>
+  <select name="beautify_mode" onchange="check_optional(this)" id="beautify_mode">
+  <option value=1>Beautify (solo JSON)</option>
+  <option value=2>Oneliner</option>
+  <option value=3>Rellenar al principio</option>
+  <option value=4>Rellenar al final</option>
+  <option value=5>Numeric autofill (usar $NUM)</option>
+  <option value=6>JSON de ConsoleConsumer sin header a JSON </option>
+  <option value=7>JsonUtil a objeto de Scala</option>
+  <option value=8>CSV a Tabla Markdown</option>
+  <option value=9>CSV a Tabla HTML</option>
+  <option value=10>JSON a Tabla HTML</option>
+  <option value=11>Convertir a ASCII (0-255)</option>
+  <option value=12>Argument Fill (usar $ARG)</option>
+  </select>
+  <br>
+  <div class="optional" id="optional">
+  <label for="optional_text"> Argumentos: </label>
+  <input type="text" id="optional_text" name="optional_text">
+  </div>
+  <button class="boton" onclick="stringUtils()"> Aplicar </button>
+  <pre><div id="resultado_nocenter">El resultado saldrá aquí...</div></pre>
+</div>    
+<script src="../js/stringUtils.js"></script>
+</body>
+</html>
